@@ -1,0 +1,158 @@
+body{
+    background-color: rgb(234, 233, 231);
+    margin: 0;
+}
+/* Заголовок */
+.headers-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 50px;
+}
+/* Меню */
+.menu{
+    width: 230px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px;
+    background-color: white;
+    margin: 35px 0px 0px 15px;
+}
+.categories{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+li:hover{
+    background-color: rgb(255,205,52);
+    color: white;
+}
+.wrapper-menu{
+    float: left;
+}
+/* Карточки товаров */
+.wrapper-cart{
+    width: 250px;
+    height: 450px;
+    margin: 40px 0px 0px 300px;
+    display: grid;
+    grid-template: repeat(3,1fr) / repeat(3,1fr);
+    gap: 60px 140px;
+}
+.cart{
+    width: 250px;
+}
+/*Логотип*/
+.wrapper-logo{
+    text-align: center;
+}
+.logo{
+    width: 200px;
+}
+/*Фото товара*/
+.wrapper-sandwich{
+    text-align: center;
+}
+.sandwich-icons{
+    width: 150px;
+}
+/*Название товара*/
+.name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+/*Выбор игнредиентов*/
+.wrapper-select{
+    text-align: center;
+    height: 56px;
+}
+/* цена */
+.price{
+    text-align: center;
+}
+.price-text{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.text-quantity{
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:10px ;
+}
+/*Количество товара*/
+.quantity{
+    margin-top: 4px;
+}
+.number {
+	user-select: none;
+	position: relative;
+	text-align: left;
+	padding: 0;
+	width: 140px;
+	display: inline-block;
+}
+.number-minus, .number-plus {
+	position: absolute;
+	top: 0;
+	width: 25px;
+	height: 32px;
+	line-height: 32px;
+	display: block;
+	background: #faf4f2;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: center;
+	font-family: arial;
+	color: #3e1e02;
+	text-decoration: none;
+    border: none;
+    border-radius: 15px;
+}
+.number-minus {
+	left: 0;
+	border-right: 0px solid #ddd;
+}
+.number-plus {
+	right: 0;
+	border-left: 0px solid #ddd;
+}
+.number-minus:hover, .number-plus:hover {
+	background: #fffcfb;
+}
+.number-minus:active, .number-plus:active {
+	background: #e8e4e2;
+}
+.number-text{
+	display: inline-block;
+	font-size: 14px;
+	color: #000;
+	line-height: 32px;
+	height: 32px;
+	padding: 0;
+	margin: 0 0 0 50px;
+	background: #fff;
+	outline: none;
+	border: none;
+    border-radius: 12px;
+	width: 45px;
+	text-align: center;
+}
+/*Кнопка*/
+.button-price{
+    font-family: 'Times New Roman', Times, serif;
+    height: 30px;
+    width: 145px;
+    margin-top: 10px;
+    background-color: rgb(255,205,52);
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
