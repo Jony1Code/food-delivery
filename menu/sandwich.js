@@ -1,6 +1,5 @@
-class Sandwich{
     //Получение массива с категорией Сэндвич.
-    async getSandwich(){
+    async function getSandwich(){
         const data = await allData();
         const dataSandwich = await data.menu.filter(el => {
             if(el.category === "sandwiches"){
@@ -9,16 +8,11 @@ class Sandwich{
         });
         return dataSandwich
     }
-}
-   
-//объявляем класс
-let sandwich = new Sandwich();
 
-console.log(sandwich.getSandwich())
 let htmlCart = "";
 async function view(){
-    const data = await sandwich.getSandwich();
-    data.forEach(({name,description,image,price,category}) => {
+    const data = await getSandwich();
+    data.forEach(({name,description,image,price}) => {
         htmlCart += `
         <div class="cart">
         <div class="wrapper-logo">
@@ -38,7 +32,7 @@ async function view(){
         <p class = "text-quantity">КОЛИЧЕСТВО</p>
         <div class = "quantity">
         <div class="number" data-step="1" data-min="1" data-max="100">
-        <input class="number-text" type="text" name="count" value="1">
+        <div class="number-text">1</div>
         <button class="number-minus">−</button>
         <button class="number-plus">+</button>
         </div>
@@ -55,5 +49,4 @@ async function view(){
     for (let i = 0; i<=n; i++) {
         cart[i].id += i;			
        }
-    console.log(document.querySelector(".number-text").value);
 }
