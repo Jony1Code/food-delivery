@@ -1,14 +1,13 @@
 window.addEventListener("click", function(event){
-    if(event.target.className === "number-plus" || event.target.className === "number-minus"){}
         //DOM оболочка
-        let wrapper = event.target.closest(".price");
-        //счётчик
-        let counter = wrapper.querySelector(".number-text");
-        let counterNumber = parseInt(counter.innerText);
+        // let wrapper = event.target.closest(".price");
+        // //счётчик
+        // let counter = wrapper.querySelector(".number-text");
+        // let counterNumber = parseInt(counter.innerText);
         //цена
-        let priceText = wrapper.querySelector(".price-text");
-        let str = priceText.innerText.replace(/\D+/, '');
-        let price = parseInt(str);
+        // let priceText = wrapper.querySelector(".price-text");
+        // let str = priceText.innerText.replace(/\D+/, '');
+        // let price = parseInt(str);
         //...   
         //Если плюс 
         if(event.target.className === "number-plus"){

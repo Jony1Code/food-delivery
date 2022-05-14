@@ -1,13 +1,13 @@
     //Получение массива с категорией Сэндвич.
-    async function getSandwich(){
-        const data = await allData();
-        const dataSandwich = await data.menu.filter(el => {
-            if(el.category === "sandwiches"){
-                    return el;
-            }
+async function getSandwich(){
+    const data = await allData();
+    const dataSandwich = data.menu.filter(el => {
+        if(el.category === "sandwiches"){
+            return el;
+        }
         });
-        return dataSandwich
-    }
+    return dataSandwich
+}
 
 let htmlCart = "";
 async function view(){
@@ -37,7 +37,7 @@ async function view(){
         <button class="number-plus">+</button>
         </div>
         </div>
-        <button class="button-price"><b>В КОРЗИНУ</b></button>
+        <button name="Price" type="button" class="button-price">В КОРЗИНУ</button>
         </div>
         </div>
         `

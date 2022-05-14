@@ -1,0 +1,46 @@
+.basket_wrapper{
+    width: 230px;
+    height: 230px;
+    margin: -65px 0px 0px 15px;
+    background: rgb(255,214,93);
+}
+.basket_wrapper-header{
+    background: rgb(255,192,0);
+    height: 50px;
+    width: 230px;
+}
+.basket_img{
+    width: 30px;
+    height: 35px;
+    padding-left: 25px;
+}
+span{
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+.basket_wrapper-total{
+    display:flex;
+    justify-content: space-between;
+    width: 210px;
+    margin-left: 10px;
+}
+.basket_wrapper-number p{
+    font-size: 15px;
+}
+.basket_total-price{
+    text-align: center;
+    font-size: 20px;
+}
+.btn_total-price{
+    width: 150px;
+    height: 30px;
+    background: rgb(129, 128, 129);
+    color: white;
+}
+.btn_total-price:hover{
+    background: rgb(231,97,77);
+}
+.wrapper_total-price{
+    text-align: center;
+}
