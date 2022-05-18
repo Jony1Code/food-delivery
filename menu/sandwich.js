@@ -1,4 +1,4 @@
-    //Получение массива с категорией Сэндвич.
+   //Получение массива с категорией Сэндвич.
 async function getSandwich(){
     const data = await allData();
     const dataSandwich = data.menu.filter(el => {
@@ -10,9 +10,10 @@ async function getSandwich(){
 }
 
 let htmlCart = "";
-async function view(){
+
+async function view() {
     const data = await getSandwich();
-    data.forEach(({name,description,image,price}) => {
+    data.forEach(({name, description, image, price}) => {
         htmlCart += `
         <div class="cart">
         <div class="wrapper-logo">
@@ -43,10 +44,10 @@ async function view(){
         `
     })
     let html = `${htmlCart}`
-    ROOT_VIEWCART.insertAdjacentHTML("afterbegin",html);
+    ROOT_VIEWCART.insertAdjacentHTML("afterbegin", html);
     let cart = document.querySelectorAll(".cart");
     let n = cart.length - 1;
-    for (let i = 0; i<=n; i++) {
-        cart[i].id += i;			
-       }
+    for (let i = 0; i <= n; i++) {
+        cart[i].id += i;
+    }
 }
