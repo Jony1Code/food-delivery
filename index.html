@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- стили -->
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/style/modal.css">
+    <link rel="stylesheet" href="/style/basket.css">
     <script src="GetData.js"></script>
-    <script src="/menu/sandwich.js" defer></script>
+    <script src = "root.js" defer></script>
+    <script src="modal.js" defer></script>
+    <script src="/menu/sandwich.js"></script>
+    <script src="counter.js" ></script>
 </head>
 <header>
     <div class = "headers">
@@ -30,6 +36,52 @@
     </div>
     <div class = "wrapper-cart">
     </div>
-
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_headers">
+            <button class="modal_close"><img src="/i/close.png" alt="" class="modal_img-close" style="width: 25px;"></button>
+            <h1 class="modal_title">Выберите размер сендвича</h1>
+            </div>
+            <div class="modal_components">
+                <ul class="components">
+                    <li class="size">Размер</li>
+                    <li class="bread">Хлеб</li>
+                    <li class="vegetables">Овощи</li>
+                    <li class="sauces">Соусы</li>
+                    <li class="filling">Начинка</li>
+                    <li class="done">Готово!</li>
+                </ul>
+            </div>
+            <button class="btn-back">< Назад</button>
+            <button class="btn-next">Вперёд ></button>
+            <div class="modal_out">
+                <!-- <div class="modal_out-cart">
+                    <div class="modal_out-img"><img class="modal_cart-img" src="/i/sizes/1x.jpg" alt=""></div>
+                    <p class="modal_cart-size">15 см</p>
+                    <hr style="border-width:1px;">
+                    <p class="modal_cart-price">Цена: 110 р.</p>
+                </div> -->
+            </div>
+            <div class="modal_footer">
+                <p class="modal_footer-price">Итого: 110 руб</p>
+            </div>
+        </div>
+    </div>
+    <div class="basket_wrapper">
+        <div class="basket_wrapper-header">
+        <img class="basket_img" src="/i/basket.png" alt=""><span>Корзина</span>
+        </div>
+        <hr style="margin:0px;">
+        <div class="basket_wrapper-total">
+            <p>Название</p>
+            <p>Количество</p>
+        </div>
+        <hr style="width: 210px; margin-top: -4px; background-color: rgb(255, 174,0); color:rgb(255, 174,0); height: 1px; border: none;">
+        <div class="basket_wrapper-out">h</div>
+        <p class="basket_total-price">Итого: 0 руб.</p>
+        <div class="wrapper_total-price">
+        <button class="btn_total-price">ОФОРМИТЬ</button>
+        </div>
+    </div>
 </body>
 </html>

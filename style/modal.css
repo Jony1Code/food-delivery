@@ -1,0 +1,136 @@
+.modal{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  top: -1000px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  padding: 90px 15px;
+}
+.modal_active {
+  position: fixed;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: .3s;
+}
+.modal_content{
+  width: 1000px;
+  height: 580px;  
+  background: rgb(234, 233, 231);
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 5px 10px black;
+}
+.modal_headers{
+  text-align: center;
+  height: 80px;
+  background-color: rgb(255,205,52);
+
+}
+.modal_close{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+  padding: 0px;
+}
+.modal_title{
+  padding: 25px;
+  margin: 0px;
+  color: white;
+}
+.modal_components{
+    background: white;
+    width: 955px;
+    height: 40px;
+    margin: 35px 5px 0 15px;
+}
+.components{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+ul.components li{
+    font-size: 25px;
+    width: 159.17px;
+    height: 40px;
+}
+ul.components li:hover{
+    background: rgb(231,97,77);
+}
+.btn-next{
+    background-color: red;
+    border: 0px;
+    height: 45px;
+    width: 125px;
+    color: white;
+    float: right;
+    margin: 35px 30px 0px 0px;
+
+}
+.btn-back{
+    background-color: red;
+    border: 0px;
+    height: 45px;
+    width: 125px;
+    color: white;
+    margin: 35px 0px 0px 19px;
+}
+/* Карточки размеров и т.д */
+.modal_out{
+    height: 250px;
+    justify-content: center;
+    display: flex;
+}
+.modal_out-cart{
+    width: 200px;
+    height: 250px;
+    margin-left: 15px;
+}
+.modal_out-img{
+    text-align: center;
+}
+.modal_cart-img{
+    width: 120px;
+    border-radius: 100px; /* Радиус скругления */
+    border: 15px solid rgb(255,205,52); /* Параметры рамки */
+}
+.modal_cart-size{
+    text-align: center;
+}
+.modal_cart-price{
+    text-align: center;
+    color: rgb(231, 97, 74);;
+}
+.modal_out-cart:hover{
+    background:rgb(255,205,52);
+}
+.modal_footer-price{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(231, 97, 74);
+}
+.modal_footer{
+    background: white;
+    height: 55px;
+}
